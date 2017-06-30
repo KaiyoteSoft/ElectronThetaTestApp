@@ -1,3 +1,4 @@
+![alt-text](https://goo.gl/photos/YcavgR6QM6aY8qhW9 "$exy Display Image")
 # Ricoh THETA Picture Taker + Viewer
 A local desktop app built with Electron that interfaces with the Ricoh THETA camera. Pictures taken with the app can be viewed. 
 
