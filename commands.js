@@ -5,7 +5,7 @@ var Client = require("node-rest-client").Client;
 
 var client = new Client();
 
-var cameraSynth = 5000; 
+var cameraSynth = 7000; 
 var delay = 9000; 
 
 function getInfo() {
