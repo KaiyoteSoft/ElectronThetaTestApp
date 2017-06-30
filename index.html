@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="commands.js"></script>
+</head>
+
+<body onLoad="startSession(), setVersion(), getState();">
+
+	<h1 id="title">Ricoh THETA Test App</h1>
+<table style="border: 0;">
+	<tr>
+		<td> 
+			<button class="btn" onClick="getInfo();">Get Info</button> 
+		</td>
+		<td>
+			<button class="btn btn-primary" onClick="takePicture(), checkStatus();">Take Picture</button>
+		</td>
+		<td>
+			<div style="display: none" id="downloadButton">
+			<button class="btn btn-success" onClick="getPicture(); reloadPage();">
+			Download Picture</button>
+			</div>
+		</td>
+		<td>
+			<div style="display: none" id="reloadButton">
+			<button class="btn btn-danger" onClick="location.reload()">View Image</button>
+			</div>
+		</td>
+	</tr>
+	<tr>
+<!-- Another row !-->
+	</tr>
+	<tr>
+		<p id="output"></p> 
+	</tr>
+</table>
+  <iframe width="100%" height="550px" allowfullscreen
+frameborder="0" src="googlevr/googlevr.html?image=../360_images/lastFile.jpg&is_stereo=false"></iframe>
+</body>
+</html>
